@@ -1,4 +1,4 @@
-!magazine/content
+!magazine/content/.htaccess
 /magazine/content/*
 !magazine/content/blocks
 /magazine/content/blocks/*
@@ -14,7 +14,7 @@
 /magazine/content/images/*
 !magazine/content/audio
 /magazine/content/audio/*
-!/magazine/export
+!/magazine/export/index.html
 /magazine/export/*
 !/magazine/export/edit
 /magazine/export/edit/*
