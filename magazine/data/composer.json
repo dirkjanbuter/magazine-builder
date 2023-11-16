@@ -1,0 +1,10 @@
+{
+    "require": {
+        "cebe/markdown": "~1.2.0",
+        "twbs/bootstrap": "^5.2",
+        "dompdf/dompdf": "^2.0",
+        "twbs/bootstrap-icons": "^1.10",
+        "smarty/smarty": "^4.3",
+        "patreon/patreon": "^1.0"
+    }
+}
