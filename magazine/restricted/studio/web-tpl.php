@@ -414,7 +414,7 @@ for($i = 0; $i < count($json['stories']); $i++)
 		]);
 		$smarty->registerPlugin("block","translate","dotranslate");
 		
-		$html = $smarty->fetch('web-'.$templateName.'.tpl');
+		$html = $smarty->fetch('web-'.$templateName.'_story.tpl');
 		
 		// diffrent live path
 		if($exportName === 'live' && isset($json['index']['exportLivePath']))

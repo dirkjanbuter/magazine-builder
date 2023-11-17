@@ -172,7 +172,7 @@
 		</div>
 
 		<div class="storyForm">
-			{include file='web-magazine_reply.tpl'}
+			{include file='web-magazine_comment.tpl'}
 		</div>		
 				
 		<div class="index">
@@ -286,7 +286,11 @@
 				<a href="{$magazine.website|escape}">
 					{$magazine.website|escape}
 				</a><br>
-				{translate}Total reading time of all stories{/translate}: {$magazine.totalReadTime|escape}
+				{translate}Total reading time of all stories{/translate}: {$magazine.totalReadTime|escape}<br>
+				<a href="https://github.com/dirkjanbuter/magazine-builder">
+					{translate}Powered by Magazine Builder{/translate}
+				<a>			
+				
 			</div>
 		</footer>
 	</body>
