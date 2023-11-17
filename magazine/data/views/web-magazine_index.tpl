@@ -8,7 +8,7 @@
 		<meta property="og:site_name" content="{$magazine.title|escape}">
 {*		<meta property="og:url" content="{$stories[$storyNo].url|escape}">*}
 		<meta property="og:type" content="website">
-		<meta property="og:image" content="{$magazine.base|escape}cache/{$magazine.issueImage|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape}">
+		<meta property="og:image" content="{$magazine.base|escape}images/{$magazine.issueImage|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape}">
 		<link rel="stylesheet" href="{$magazine.base|escape}styles/web-magazine.css?d={$timestamp}">
 {foreach from=$magazine.js item=js}
 		<script src="{$magazine.base|escape}js/{$js|escape}" defer></script>											
@@ -18,7 +18,7 @@
 		<div class="navigation" id="navigation">
 			<div class="navigationButton" id="navigationButton">		
 			</div>		
-			<div class="navigationCover" style="background-image: url({$magazine.base|escape}cache/{$magazine.frontCoverImage|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})">						
+			<div class="navigationCover" style="background-image: url({$magazine.base|escape}images/{$magazine.frontCoverImage|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})">						
 				<div class="navigationCoverTitleBar">
 					<div class="navigationCoverTitle">
 						{$magazine.title|escape}
@@ -34,7 +34,7 @@
 							
 {foreach from=$stories key=no item=storyItem}
 	{if $storyItem.type == "story" or $storyItem.type == "advertisement"}
-			<div class="navigationBG" id="navigationBG-{$no}" style="background-image: url({$magazine.base|escape}cache/{$storyItem.storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})">		
+			<div class="navigationBG" id="navigationBG-{$no}" style="background-image: url({$magazine.base|escape}images/{$storyItem.storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})">		
 {if array_key_exists('bonusStory', $storyItem) && $storyItem.bonusStory == true}
 						<div class="bonusContent">
 						</div>			
@@ -55,7 +55,7 @@
 					<li>
 						<a 
 							href="{$storyItem.url|escape}" 
-							style="background-image: url({$magazine.base|escape}cache/{$storyItem.storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})"
+							style="background-image: url({$magazine.base|escape}images/{$storyItem.storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})"
 							title="{$storyItem.title|escape}"
 							onmouseover="document.getElementById('navigationBG-{$no}').className = 'navigationBG navigationBGAnimate';"
 							onmouseout="document.getElementById('navigationBG-{$no}').className = 'navigationBG';"
@@ -73,7 +73,7 @@
 			{include file='web-magazine_mainnav.tpl'}		
 		</nav>*}	
 		
-		<header class="header" onclick="location.href='{$magazine.home|escape}';">
+		<header class="header" onclick="location.href='{$magazine.home|escape}';" style="background-image: url({$magazine.base|escape}images/logo.webp);">
 			<div class="headerTitleBar">
 				<div class="headerTitle">
 					{$magazine.title|escape}
@@ -92,7 +92,7 @@
 				href="{$mainStory.url|escape}"
 				class="mainStoryInner"
 				onclick="location.href='{$mainStory.url|escape}';"
-				style="background-image: url({$magazine.base|escape}cache/{$mainStory.mainCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})"
+				style="background-image: url({$magazine.base|escape}images/{$mainStory.mainCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})"
 			>				
 				<div class="mainStoryTitleBar">
 					<h2 class="mainStoryTitle">
@@ -115,7 +115,7 @@
 					<a 
 						href="{$storyItem.url|escape}" 
 						class="indexThumbInner"
-						style="background-image: url({$magazine.base|escape}cache/{$storyItem.storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})">
+						style="background-image: url({$magazine.base|escape}images/{$storyItem.storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})">
 {if array_key_exists('bonusStory', $storyItem) && $storyItem.bonusStory == true}
 						<div class="bonusContent">
 						</div>			
@@ -145,7 +145,7 @@
 					<div
 						class="navAdInner"
 						onclick="location.href='{$storyItem.url|escape}';"
-						style="background-image: url({$magazine.base|escape}cache/{$storyItem.storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})"
+						style="background-image: url({$magazine.base|escape}images/{$storyItem.storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})"
 					>
 						<div class="navAdTitleBar">
 							<div class="navAdTitle">

@@ -36,6 +36,10 @@
 #temp
 /magazine/shared/cache
 /magazine/shared/qrlink
+!/magazine/restricted/studio/index.php
+!/magazine/restricted/studio/list.php
+!/magazine/restricted/studio/edit.php
+!/magazine/restricted/studio/web-tpl.php
 /magazine/restricted
 /magazine/app
 

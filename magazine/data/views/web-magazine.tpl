@@ -9,7 +9,7 @@
 		<meta property="og:site_name" content="{$magazine.title|escape}">
 {*		<meta property="og:url" content="{$stories[$storyNo].url|escape}">*}
 		<meta property="og:type" content="article">
-		<meta property="og:image" content="{$magazine.base|escape}cache/{$stories[$storyNo].storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape}">
+		<meta property="og:image" content="{$magazine.base|escape}images/{$stories[$storyNo].storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape}">
 		<link rel="stylesheet" href="{$magazine.base|escape}styles/web-magazine.css?d={$timestamp}">
 {foreach from=$magazine.js item=js}
 		<script src="{$magazine.base|escape}js/{$js|escape}" defer></script>											
@@ -19,7 +19,7 @@
 		<div class="navigation" id="navigation">
 			<div class="navigationButton" id="navigationButton">		
 			</div>		
-			<div class="navigationCover" style="background-image: url({$magazine.base|escape}cache/{$magazine.frontCoverImage|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})">						
+			<div class="navigationCover" style="background-image: url({$magazine.base|escape}images/{$magazine.frontCoverImage|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})">						
 				<div class="navigationCoverTitleBar">
 					<div class="navigationCoverTitle">
 						{$magazine.title|escape}
@@ -35,7 +35,7 @@
 							
 {foreach from=$stories key=no item=storyItem}
 	{if $storyItem.type == "story" or $storyItem.type == "advertisement"}
-			<div class="navigationBG" id="navigationBG-{$no}" style="background-image: url({$magazine.base|escape}cache/{$storyItem.storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})">		
+			<div class="navigationBG" id="navigationBG-{$no}" style="background-image: url({$magazine.base|escape}images/{$storyItem.storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})">		
 {if array_key_exists('bonusStory', $storyItem) && $storyItem.bonusStory == true}
 						<div class="bonusContent">
 						</div>			
@@ -56,7 +56,7 @@
 					<li>
 						<a 
 							href="{$storyItem.url|escape}" 
-							style="background-image: url({$magazine.base|escape}cache/{$storyItem.storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})"
+							style="background-image: url({$magazine.base|escape}images/{$storyItem.storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})"
 							title="{$storyItem.title|escape}"
 							onmouseover="document.getElementById('navigationBG-{$no}').className = 'navigationBG navigationBGAnimate';"
 							onmouseout="document.getElementById('navigationBG-{$no}').className = 'navigationBG';"
@@ -74,7 +74,7 @@
 			{include file='web-magazine_mainnav.tpl'}		
 		</nav>*}	
 		
-		<header class="header" onclick="location.href='{$magazine.home|escape}';">
+		<header class="header" onclick="location.href='{$magazine.home|escape}';" style="background-image: url({$magazine.base|escape}images/logo.webp);">
 			<div class="headerTitleBar">
 				<div class="headerTitle">
 					{$magazine.title|escape}
@@ -90,7 +90,7 @@
 
 		<div 
 			class="storyCover" 
-			style="background-image: url({$magazine.base|escape}cache/{$stories[$storyNo].storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape}); height: {$stories[$storyNo].storyCoverHeight|escape};"
+			style="background-image: url({$magazine.base|escape}images/{$stories[$storyNo].storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape}); height: {$stories[$storyNo].storyCoverHeight|escape};"
 		>
 {if array_key_exists('bonusStory', $stories[$storyNo]) && $stories[$storyNo].bonusStory == true}
 			<div class="bonusContent">
@@ -101,13 +101,13 @@
 					{$stories[$storyNo].title|escape}
 				</h1>				
 				<div class="storyAuthor">
-					<img src="{$magazine.base|escape}images/vector-pen.png" alt="Author icon" width="20" height="20">
+					<img src="{$magazine.base|escape}images/vector-pen.webp" alt="Author icon" width="20" height="20">
 					{$stories[$storyNo].author|escape}
-					<img src="{$magazine.base|escape}images/image.png" alt="Photographer icon" width="20" height="20">
+					<img src="{$magazine.base|escape}images/image.webp" alt="Photographer icon" width="20" height="20">
 					<a href="{$stories[$storyNo].photoSource|escape}" target="_blank">
 						{$stories[$storyNo].photographer|escape} 
 					</a>
-					<img src="{$magazine.base|escape}images/stopwatch.png" alt="Read time icon" width="20" height="20">
+					<img src="{$magazine.base|escape}images/stopwatch.webp" alt="Read time icon" width="20" height="20">
 					{$stories[$storyNo].readTime|escape}  
 				</div>
 			</div>
@@ -147,10 +147,10 @@
 		{if $block.cover != null}
 					<div 
 						class="storyBlockCover" 
-						style="background-image: url({$magazine.base|escape}cache/{$block.cover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape});"
+						style="background-image: url({$magazine.base|escape}images/{$block.cover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape});"
 					>
 						<div class="storyBlockCoverPhotographer">
-							<img src="{$magazine.base|escape}images/image.png" alt="Photographer icon">
+							<img src="{$magazine.base|escape}images/image.webp" alt="Photographer icon">
 							<a href="{$block.photoSource|escape}">{$block.photographer|escape}</a>
 						</div>
 					</div>
@@ -184,7 +184,7 @@
 					<a 
 						href="{$nextStory.url|escape}"
 						class="nextInner"
-						style="background-image: url({$magazine.base|escape}cache/{$nextStory.storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})"
+						style="background-image: url({$magazine.base|escape}images/{$nextStory.storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})"
 					>
 {if array_key_exists('bonusStory', $nextStory) && $nextStory.bonusStory == true}
 						<div class="bonusContent">
@@ -209,7 +209,7 @@
 					<a 
 						href="{$storyItem.url|escape}"
 						class="indexThumbInner"
-						style="background-image: url({$magazine.base|escape}cache/{$storyItem.storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})">
+						style="background-image: url({$magazine.base|escape}images/{$storyItem.storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})">
 {if array_key_exists('bonusStory', $storyItem) && $storyItem.bonusStory == true}
 						<div class="bonusContent">
 						</div>			
@@ -239,7 +239,7 @@
 					<div
 						class="navAdInner"
 						onclick="location.href='{$storyItem.url|escape}';"
-						style="background-image: url({$magazine.base|escape}cache/{$storyItem.storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})"
+						style="background-image: url({$magazine.base|escape}images/{$storyItem.storyCover|regex_replace:"/\.[a-zA-Z0-1]+$/":".webp"|escape})"
 					>
 						<div class="navAdTitleBar">
 							<div class="navAdTitle">
