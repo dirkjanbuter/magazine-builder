@@ -38,10 +38,13 @@
 #temp
 /magazine/shared/cache
 /magazine/shared/qrlink
-/magazine/restricted
-!/magazine/restricted/studio/index.php
-!/magazine/restricted/studio/list.php
-!/magazine/restricted/studio/edit.php
-!/magazine/restricted/studio/web-tpl.php
+/magazine/restricted/desktop/*
+/magazine/restricted/feedback/*
+/magazine/restricted/stats/*
+/magazine/restricted/studio/cache
+/magazine/restricted/studio/pdf-tpl.php
+/magazine/restricted/studio/txt.php
+/magazine/restricted/studio/users-edit.php
+/magazine/restricted/studio/users-print.php
 /magazine/app
 
