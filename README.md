@@ -13,3 +13,5 @@ To get a sneak peek of what our magazine software has to offer, you can access t
 ## Web & Print
 
 Our software exports content to HTML, eliminating the need for caching and ensuring a near-zero response time. Dynamic content is added through client-side scripting via a web API. Furthermore, the PDF output is optimized for printing at 300dpi, allowing you to directly print it with your preferred printing company.
+
+![Screenshot Magazine Builder](https://dirkjanbuter.github.io/magazine/export/images/magazinebuilder.webp)
