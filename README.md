@@ -8,4 +8,4 @@ Please be aware that this repository is currently being actively worked on. As a
 
 ## Demo
 
-To get a sneak peek of what our magazine software has to offer, you can access the demo version by visiting: [https://drkjanbuter.github.io/](https://drkjanbuter.github.io/)
+To get a sneak peek of what our magazine software has to offer, you can access the demo version by visiting: [https://dirkjanbuter.github.io/](https://dirkjanbuter.github.io/)
