@@ -1,4 +1,4 @@
-<img alt="Screenshot Magazine Builder" href="https://dirkjanbuter.github.io/magazine/export/images/magazinebuilder.webp" width="100" style="float: right;">
+<img alt="Screenshot Magazine Builder" href="https://dirkjanbuter.github.io/magazine/export/images/magazinebuilder.webp" width="100">
 
 # Magazine Builder
 
