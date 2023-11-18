@@ -15,3 +15,5 @@ Our software exports content to HTML, eliminating the need for caching and ensur
 ## Demo
 
 To get a sneak peek of what our magazine software has to offer, you can access the demo version by visiting: [https://dirkjanbuter.github.io/](https://dirkjanbuter.github.io/)
+
+![Printed magazine](https://dirkjanbuter.github.io//magazine/export/images/IMG_5672_djbmreading.webp)
