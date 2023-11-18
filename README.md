@@ -1,3 +1,5 @@
+<img alt="Screenshot Magazine Builder" href="https://dirkjanbuter.github.io/magazine/export/images/magazinebuilder.webp" width="100" style="float: right;">
+
 # Magazine Builder
 
 Welcome to Magazine Builder, a powerful tool designed to make it effortless for you to share your stories across various platforms such as the web, print, and e-readers.
@@ -13,5 +15,3 @@ Our software exports content to HTML, eliminating the need for caching and ensur
 ## Demo
 
 To get a sneak peek of what our magazine software has to offer, you can access the demo version by visiting: [https://dirkjanbuter.github.io/](https://dirkjanbuter.github.io/)
-
-![Screenshot Magazine Builder](https://dirkjanbuter.github.io/magazine/export/images/magazinebuilder.webp)
