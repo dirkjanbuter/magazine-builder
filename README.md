@@ -1,5 +1,3 @@
-<img alt="Screenshot Magazine Builder" href="https://dirkjanbuter.github.io/magazine/export/images/magazinebuilder.webp" width="100">
-
 # Magazine Builder
 
 Welcome to Magazine Builder, a powerful tool designed to make it effortless for you to share your stories across various platforms such as the web, print, and e-readers.
