@@ -1,7 +1,11 @@
 # Magazine Builder
 
-Welcome to Magazine Builder, an incredible tool that allows you to easily share your stories on the web, in print, and on e-readers.
+Welcome to Magazine Builder, a powerful tool designed to make it effortless for you to share your stories across various platforms such as the web, print, and e-readers.
 
-## In Development
+## Status: Under Development 
 
-Please note that this repository is currently a work in progress. If you are planning to use the software, we kindly request that you reach out to us directly for support. We appreciate your patience as we continue to work on completing this repository.
+Please be aware that this repository is currently being actively worked on. As a result, we kindly request that you get in touch with us directly for any assistance or support you may need when using the software. We truly appreciate your patience as we strive to finalize and perfect this repository.
+
+## Demo
+
+To get a sneak peek of what our magazine software has to offer, you can access the demo version by visiting: [https://drkjanbuter.github.io/](https://drkjanbuter.github.io/)
